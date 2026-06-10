@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Team Designated — Designated To Deliver Perfection</title>
+  <meta name="description" content="Team Designated is a premium event management company. Corporate events, stand-up comedy, luxury weddings, parties, and Gen-Z experiences." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&family=Bebas+Neue&display=swap" rel="stylesheet" />
+
+  <!-- AOS Animate on Scroll -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <!-- Remixicons -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <link rel="stylesheet" href="css/styles.css?v=2" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════
+       NAVBAR
+  ═══════════════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <img src="assets/logo/logo1.png" alt="Team Designated" class="nav-logo-img" />
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#events" class="nav-link">Events</a></li>
+<li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#contact" class="nav-link nav-cta">Book Us</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════ -->
+  <section class="hero" id="home">
+    <canvas id="particleCanvas"></canvas>
+    <div class="hero-overlay"></div>
+
+    <!-- Intro splash: logo wipes in → fades → hero content appears -->
+    <div class="hero-intro" id="heroIntro">
+      <!-- Gold lines outside the wrap — span full hero height -->
+      <div class="intro-line intro-line-left" id="introLineLeft"></div>
+      <div class="intro-line intro-line-right" id="introLineRight"></div>
+      <div class="hero-intro-wrap" id="heroIntroWrap">
+        <img src="assets/logo/logo1.png" alt="Team Designated" class="hero-intro-logo" id="heroIntroLogo" />
+        <div class="hero-intro-cover" id="heroIntroCover"></div>
+      </div>
+    </div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow">Welcome to</p>
+      <h1 class="hero-title">TEAM<br /><span class="gold">DESIGNATED</span></h1>
+      <p class="hero-tagline">Designated To Deliver <span class="gold">Perfection</span></p>
+      <div class="hero-actions">
+<a href="#contact" class="btn btn-outline">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       ABOUT
+  ═══════════════════════════════════════ -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <p class="section-eyebrow">Who We Are</p>
+        <h2 class="section-title">About <span class="gold">Team Designated</span></h2>
+        <div class="title-underline"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-text" data-aos="fade-right" data-aos-delay="100">
+          <p class="about-lead">
+            Born from passion, built on precision — Team Designated is Pune's emerging premium event management company dedicated to crafting unforgettable experiences.
+          </p>
+          <p>
+            Our journey began in the corridors of MBA, where we took on the challenge of organizing large-scale college events. From managing logistics to curating immersive experiences for thousands of students — we delivered every single time. That track record of zero failures and 100% execution earned us our name.
+          </p>
+          <p>
+            Today, we've stepped into the open market — bringing that same relentless standard to corporate events, stand-up comedy nights, luxury weddings, exclusive parties, and Gen-Z experiences. Whether it's an intimate gathering or a sold-out show, Team Designated shows up — and shows out.
+          </p>
+          <div class="about-values">
+            <div class="value-chip"><i class="ri-shield-star-line"></i> Precision</div>
+            <div class="value-chip"><i class="ri-sparkling-line"></i> Creativity</div>
+            <div class="value-chip"><i class="ri-heart-line"></i> Passion</div>
+            <div class="value-chip"><i class="ri-trophy-line"></i> Excellence</div>
+          </div>
+        </div>
+        <div class="about-visual" data-aos="fade-left" data-aos-delay="200">
+          <div class="about-poster-wrap">
+            <img src="assets/images/gallery/about.jpeg" alt="Team Designated — We Do More" class="about-poster-img" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       SERVICES
+  ═══════════════════════════════════════ -->
+  <section class="section services" id="services">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <p class="section-eyebrow">What We Do</p>
+        <h2 class="section-title">Our <span class="gold">Services</span></h2>
+        <div class="title-underline"></div>
+        <p class="section-desc">From boardrooms to stages, from mandaps to dance floors — we manage it all with the same relentless standard.</p>
+      </div>
+      <div class="services-zigzag">
+
+        <div class="sq-card" data-aos="fade-right" data-aos-delay="0">
+          <div class="sq-header">
+            <span class="sq-num">01</span>
+            <span class="sq-cat">Professional</span>
+          </div>
+          <div class="sq-main">
+            <h3 class="sq-title">Corporate<br>Events</h3>
+          </div>
+          <div class="sq-lower">
+            <p class="sq-desc">Product launches, conferences, award nights — executed with sharp professionalism.</p>
+            <a href="#contact" class="sq-cta-link">Enquire <i class="ri-arrow-right-line"></i></a>
+          </div>
+        </div>
+
+        <div class="sq-card sq-card-lit" data-aos="fade-up" data-aos-delay="150">
+          <div class="sq-header">
+            <span class="sq-num">02</span>
+            <span class="sq-cat">Live Shows</span>
+          </div>
+          <div class="sq-main">
+            <h3 class="sq-title">Stand-Up<br>Comedy</h3>
+          </div>
+          <div class="sq-lower">
+            <p class="sq-desc">Artist booking, venue, production, ticketing and crowd experience — end to end.</p>
+            <a href="#contact" class="sq-cta-link">Enquire <i class="ri-arrow-right-line"></i></a>
+          </div>
+        </div>
+
+        <div class="sq-card sq-card-warm" data-aos="fade-left" data-aos-delay="0">
+          <div class="sq-header">
+            <span class="sq-num">03</span>
+            <span class="sq-cat">Luxury</span>
+          </div>
+          <div class="sq-main">
+            <h3 class="sq-title">Luxury<br>Weddings</h3>
+          </div>
+          <div class="sq-lower">
+            <p class="sq-desc">Destination and luxury weddings. Every detail — décor to dining — curated exclusively for you.</p>
+            <a href="#contact" class="sq-cta-link">Enquire <i class="ri-arrow-right-line"></i></a>
+          </div>
+        </div>
+
+        <div class="sq-card sq-card-dark" data-aos="fade-right" data-aos-delay="200">
+          <div class="sq-header">
+            <span class="sq-num">04</span>
+            <span class="sq-cat">Exclusive</span>
+          </div>
+          <div class="sq-main">
+            <h3 class="sq-title">Parties &amp;<br>Nightlife</h3>
+          </div>
+          <div class="sq-lower">
+            <p class="sq-desc">Pub events, themed nights, private parties, exclusive socials. We bring the energy.</p>
+            <a href="#contact" class="sq-cta-link">Enquire <i class="ri-arrow-right-line"></i></a>
+          </div>
+        </div>
+
+        <div class="sq-card" data-aos="fade-left" data-aos-delay="200">
+          <div class="sq-header">
+            <span class="sq-num">05</span>
+            <span class="sq-cat">Trending</span>
+          </div>
+          <div class="sq-main">
+            <h3 class="sq-title">Gen-Z<br>Experiences</h3>
+          </div>
+          <div class="sq-lower">
+            <p class="sq-desc">Activations, pop-ups, creator meets and cultural experiences for the next generation.</p>
+            <a href="#contact" class="sq-cta-link">Enquire <i class="ri-arrow-right-line"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       EVENTS — SOLD OUT
+  ═══════════════════════════════════════ -->
+  <section class="section events" id="events">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <p class="section-eyebrow">Our Events</p>
+        <h2 class="section-title">Successfully <span class="gold">Delivered</span></h2>
+        <div class="title-underline"></div>
+      </div>
+
+      <!-- SOLD OUT CARD -->
+      <div class="soldout-card" data-aos="zoom-in" data-aos-delay="100">
+        <div class="soldout-top-banner">
+          <i class="ri-checkbox-circle-fill"></i>
+          SOLD OUT &amp; SUCCESSFULLY DELIVERED
+        </div>
+        <div class="soldout-inner">
+          <div class="soldout-info">
+            <p class="event-ft">ft.</p>
+            <h2 class="event-artist">RAVI GUPTA</h2>
+            <h3 class="event-show-name">KAL KI CHINTA<br /><span class="gold">NAI KARTA</span></h3>
+            <div class="event-meta">
+              <div class="event-meta-item">
+                <i class="ri-map-pin-2-line"></i>
+                <div>
+                  <span class="meta-label">Venue</span>
+                  <span class="meta-value">Jawaharlal Nehru Memorial Hall, Pune</span>
+                </div>
+              </div>
+              <div class="event-meta-item">
+                <i class="ri-calendar-event-line"></i>
+                <div>
+                  <span class="meta-label">Date</span>
+                  <span class="meta-value">22nd May 2026</span>
+                </div>
+              </div>
+            </div>
+            <div class="soldout-badge-row">
+              <span class="soldout-badge"><i class="ri-ticket-fill"></i> Sold Out</span>
+              <span class="soldout-badge soldout-badge-alt"><i class="ri-group-fill"></i> Full House</span>
+            </div>
+          </div>
+          <div class="soldout-photos">
+            <div class="soldout-photo soldout-photo-wide" onclick="openLightbox(this)">
+              <img src="assets/images/gallery/ravi audience.png" alt="Sold Out Show — Ravi Gupta KKCNK" loading="lazy" />
+              <div class="poster-overlay"><i class="ri-zoom-in-line"></i></div>
+            </div>
+            <div class="soldout-photo-row">
+              <div class="soldout-photo" onclick="openLightbox(this)">
+                <img src="assets/images/gallery/group pic.jpeg" alt="Team Designated — Event Night" loading="lazy" />
+                <div class="poster-overlay"><i class="ri-zoom-in-line"></i></div>
+              </div>
+              <div class="soldout-photo" onclick="openLightbox(this)">
+                <img src="assets/images/gallery/stage.jpeg" alt="Stage — Team Designated" loading="lazy" />
+                <div class="poster-overlay"><i class="ri-zoom-in-line"></i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       GALLERY
+  ═══════════════════════════════════════ -->
+  <section class="section gallery" id="gallery">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <p class="section-eyebrow">Moments We Created</p>
+        <h2 class="section-title">Event <span class="gold">Gallery</span></h2>
+        <div class="title-underline"></div>
+        <p class="section-desc">Every frame tells the story of an experience we delivered. Our portfolio of successful events.</p>
+      </div>
+
+      <!-- Filter tabs -->
+      <div class="gallery-tabs" data-aos="fade-up" data-aos-delay="100">
+        <button class="gallery-tab active" data-filter="all">All Events</button>
+        <button class="gallery-tab" data-filter="comedy">Stand-Up Comedy</button>
+        <button class="gallery-tab" data-filter="concert">Music Concert</button>
+        <button class="gallery-tab" data-filter="corporate">Corporate</button>
+        <button class="gallery-tab" data-filter="wedding">Weddings</button>
+      </div>
+
+      <div class="gallery-grid gallery-dice" id="galleryGrid">
+
+        <!-- Dot 1 — top left -->
+        <div class="gallery-item dice-pos-1" data-category="comedy" data-aos="fade-up" data-aos-delay="0" onclick="openLightbox(this)">
+          <img src="assets/images/gallery/Welcome pic.jpeg" alt="Team Designated — Event Night" loading="lazy" />
+          <div class="gallery-overlay">
+            <p class="gallery-event-name">Team Designated</p>
+            <i class="ri-zoom-in-line"></i>
+          </div>
+        </div>
+
+        <!-- Dot 2 — top right -->
+        <div class="gallery-item dice-pos-2" data-category="comedy" data-aos="fade-up" data-aos-delay="100" onclick="openLightbox(this)">
+          <img src="assets/images/gallery/pic2.png" alt="Kal Ki Chinta Nai Karta — Ravi Gupta" loading="lazy" />
+          <div class="gallery-overlay">
+            <p class="gallery-event-name">Ravi Gupta — KKCNK</p>
+            <i class="ri-zoom-in-line"></i>
+          </div>
+        </div>
+
+        <!-- Dot 3 — centre -->
+        <div class="gallery-item dice-pos-3" data-category="concert" data-aos="fade-up" data-aos-delay="200" onclick="openLightbox(this)">
+          <img src="assets/images/gallery/college.png" alt="Music Concert" loading="lazy" />
+          <div class="gallery-overlay">
+            <p class="gallery-event-name">Music Concert</p>
+            <i class="ri-zoom-in-line"></i>
+          </div>
+        </div>
+
+        <!-- Dot 4 — bottom left -->
+        <div class="gallery-item dice-pos-4" data-category="corporate" data-aos="fade-up" data-aos-delay="300" onclick="openLightbox(this)">
+          <img src="assets/images/gallery/cooperarte.png" alt="Corporate Event" loading="lazy" />
+          <div class="gallery-overlay">
+            <p class="gallery-event-name">Corporate Event</p>
+            <i class="ri-zoom-in-line"></i>
+          </div>
+        </div>
+
+        <!-- Dot 5 — bottom right -->
+        <div class="gallery-item dice-pos-5" data-category="wedding" data-aos="fade-up" data-aos-delay="400" onclick="openLightbox(this)">
+          <img src="assets/images/gallery/wedding 4.png" alt="Wedding" loading="lazy" />
+          <div class="gallery-overlay">
+            <p class="gallery-event-name">Wedding</p>
+            <i class="ri-zoom-in-line"></i>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="gallery-coming-soon" data-aos="fade-up">
+        <div class="cs-icon"><i class="ri-camera-line"></i></div>
+        <p>Full event gallery from <strong>Kal Ki Chinta Nai Karta</strong> drops after 22nd May 2026.</p>
+        <a href="https://instagram.com/teamdesignatedind" target="_blank" rel="noopener" class="btn btn-outline-sm">
+          <i class="ri-instagram-line"></i> Follow for Live Updates
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       CONTACT
+  ═══════════════════════════════════════ -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <p class="section-eyebrow">Let's Create Together</p>
+        <h2 class="section-title">Book Us / <span class="gold">Get in Touch</span></h2>
+        <div class="title-underline"></div>
+        <p class="section-desc">Tell us about your event and we'll get back to you within 24 hours.</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Info Side -->
+        <div class="contact-info" data-aos="fade-right" data-aos-delay="100">
+          <h3>Reach Out Directly</h3>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="ri-mail-line"></i></div>
+            <div>
+              <p class="contact-item-label">Email</p>
+              <a href="mailto:teamdesignatedindia@gmail.com" class="contact-item-value">teamdesignatedindia@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="ri-phone-line"></i></div>
+            <div>
+              <p class="contact-item-label">Phone / WhatsApp</p>
+              <a href="tel:+919930588495" class="contact-item-value">+91 99305 88495</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="ri-instagram-line"></i></div>
+            <div>
+              <p class="contact-item-label">Instagram</p>
+              <a href="https://instagram.com/teamdesignatedind" target="_blank" rel="noopener" class="contact-item-value">@teamdesignatedind</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="ri-map-pin-line"></i></div>
+            <div>
+              <p class="contact-item-label">Based In</p>
+              <span class="contact-item-value">Pune, Maharashtra, India</span>
+            </div>
+          </div>
+
+          <div class="contact-social-row">
+            <a href="https://instagram.com/teamdesignatedind" target="_blank" rel="noopener" class="social-btn" aria-label="Instagram">
+              <i class="ri-instagram-line"></i>
+            </a>
+            <a href="https://wa.me/919930588495" target="_blank" rel="noopener" class="social-btn" aria-label="WhatsApp">
+              <i class="ri-whatsapp-line"></i>
+            </a>
+            <a href="mailto:teamdesignatedindia@gmail.com" class="social-btn" aria-label="Email">
+              <i class="ri-mail-send-line"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Form Side -->
+        <div class="contact-form-wrap" data-aos="fade-left" data-aos-delay="200">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname">Full Name *</label>
+                <input type="text" id="fname" name="from_name" placeholder="Your name" required />
+              </div>
+              <div class="form-group">
+                <label for="fphone">Phone / WhatsApp *</label>
+                <input type="tel" id="fphone" name="phone" placeholder="+91 XXXXX XXXXX" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="femail">Email Address *</label>
+              <input type="email" id="femail" name="reply_to" placeholder="you@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="fevent">Type of Event *</label>
+              <select id="fevent" name="event_type" required>
+                <option value="" disabled selected>Select event type</option>
+                <option>Stand-Up Comedy Show</option>
+                <option>Corporate Event</option>
+                <option>Wedding (Destination / Luxury)</option>
+                <option>Party / Nightlife Event</option>
+                <option>Gen-Z / Cultural Experience</option>
+                <option>Ticket Enquiry — Ravi Gupta Show</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fdate">Preferred Date</label>
+                <input type="date" id="fdate" name="event_date" />
+              </div>
+              <div class="form-group">
+                <label for="fguests">Expected Guests</label>
+                <input type="text" id="fguests" name="guest_count" placeholder="e.g. 100–200" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="fmsg">Tell Us About Your Event *</label>
+              <textarea id="fmsg" name="message" rows="4" placeholder="Describe your event, vision, budget range, location..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-gold btn-full" id="submitBtn">
+              <span id="submitText">Send Enquiry</span>
+              <i class="ri-send-plane-line" id="submitIcon"></i>
+              <div class="btn-loader" id="btnLoader"></div>
+            </button>
+            <p class="form-note">We respond within 24 hours. For urgent queries call or WhatsApp directly.</p>
+            <div class="form-success" id="formSuccess">
+              <i class="ri-checkbox-circle-fill"></i>
+              <p>Thank you! Your enquiry has been sent. We'll be in touch within 24 hours.</p>
+            </div>
+            <div class="form-error" id="formError">
+              <i class="ri-error-warning-line"></i>
+              <p>Something went wrong. Please email us directly at teamdesignatedindia@gmail.com</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <img src="assets/logo/logo1.png" alt="Team Designated" class="footer-logo-img" />
+        </div>
+        <p class="footer-tagline">Designated To Deliver Perfection</p>
+        <div class="footer-socials">
+          <a href="https://instagram.com/teamdesignatedind" target="_blank" rel="noopener" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+          <a href="https://wa.me/919930588495" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="ri-whatsapp-line"></i></a>
+          <a href="mailto:teamdesignatedindia@gmail.com" aria-label="Email"><i class="ri-mail-line"></i></a>
+        </div>
+      </div>
+      <div class="footer-links-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-links-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Corporate Events</a></li>
+          <li><a href="#services">Stand-Up Comedy</a></li>
+          <li><a href="#services">Luxury Weddings</a></li>
+          <li><a href="#services">Parties & Nightlife</a></li>
+          <li><a href="#services">Gen-Z Experiences</a></li>
+        </ul>
+      </div>
+      <div class="footer-links-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:teamdesignatedindia@gmail.com">teamdesignatedindia@gmail.com</a></li>
+          <li><a href="tel:+919930588495">+91 99305 88495</a></li>
+          <li><span>Pune, Maharashtra</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Team Designated. All rights reserved.</p>
+      <p>Designated To Deliver Perfection</p>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════
+       LIGHTBOX
+  ═══════════════════════════════════════ -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <button class="lightbox-close" onclick="closeLightbox()" aria-label="Close"><i class="ri-close-line"></i></button>
+    <img class="lightbox-img" id="lightboxImg" src="" alt="Event Photo" />
+  </div>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="ri-arrow-up-line"></i>
+  </button>
+
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

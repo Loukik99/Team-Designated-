@@ -1,0 +1,9 @@
+# Editor / tooling
+.claude/
+
+# Dev screenshots
+Screenshot *.png
+
+# OS files
+Thumbs.db
+.DS_Store
