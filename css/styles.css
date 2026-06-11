@@ -563,12 +563,14 @@ button { cursor: pointer; border: none; background: none; }
   color: var(--gold-light);
   line-height: 1.8;
   margin-bottom: 20px;
+  text-align: justify;
 }
 
 .about-text p {
   color: var(--white-dim);
   margin-bottom: 16px;
   line-height: 1.9;
+  text-align: justify;
 }
 
 .about-values {
